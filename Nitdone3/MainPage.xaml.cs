@@ -22,7 +22,7 @@ namespace Nitdone3
         private async void On_Clicked(object sender, EventArgs e)
         {
             bool result = await DisplayAlert("Confirm Action", "Are you sure you want to click?", "Yes", "No");
-            await DisplayAlert("Notification", "You choosed: " + (result ? "Press" : "Cancel"), "OK");
+            await DisplayAlert("Notification", "You choosed: " + (result ? "Press" : "Отменить"), "OK");
             bool vkl = true;
             while (vkl != false)
             {
@@ -49,7 +49,7 @@ namespace Nitdone3
         private async void Off_Clicked(object sender, EventArgs e)
         {
             bool result = await DisplayAlert("Confirm Action", "Are you sure you want to click?", "Yes", "No");
-            await DisplayAlert("Notification", "You choosed: " + (result ? "Press" : "Cancel"), "OK");
+            await DisplayAlert("Notification", "You choosed: " + (result ? "Press" : "Отменить"), "OK");
 
             h.Opacity = 0;
             bb.Opacity = 0;
